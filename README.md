@@ -10,10 +10,12 @@ We want to have our project focus on college age drinking due to the normalizati
 **Datasets**
 
 - [Drug Use By Age] (https://www.icpsr.umich.edu/web/ICPSR/studies/21600/variables?q=alcohol)
+
 This dataset comes from the National Longitudinal Study of Adolescent to Adult Health which was conducted by the University of Northern Carolina and published to the ICPSR (a data publication) website where we accessed it. The study lasted from 1994 to 2008 and collected data through in-home interviews and health surveys. The dataset provides a variety of national health data among Americans aged 7-32. Our group will be focusing on data on alcohol use for young Americans. This data includes drinking habits, mixing alcohol with other drugs, and alcohol use by age and gender. 
 
 - [Substance Abuse & Mental Health Data Archive](https://pdas.samhsa.gov/#/survey/NSDUH-2018-DS0001?column=ALDAYPWK&control=COLLENRLST&results_received=true&row=DEPNDALC&run_chisq=false&weight=ANALWT_C)
-The data came from a survey conducted in 2018 by the Substance Abuse and Mental Health Administration. The survey was distributed to people in the United States aged 12 and older. To view the data we selected, you must click crosstab. The control group of this dataset are students enrolled in college. There is a comparison made between alcohol dependency and number of drinks consumed within a week.
+
+This data came from a survey conducted in 2018 by the Substance Abuse and Mental Health Administration. The survey was distributed to people in the United States aged 12 and older. To view the data we selected, you must click crosstab. The control group of this dataset are students enrolled in college. There is a comparison made between alcohol dependency and number of drinks consumed within a week.
 
 **Supplementary Resources**
 
