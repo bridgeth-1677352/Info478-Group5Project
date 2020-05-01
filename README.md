@@ -5,9 +5,13 @@ Bridget Haney, Emma Dickenson, Jennifer Li, Steven Luong
 
 **Project Proposal**
 
-We want to have our project focus on college age drinking due to the normalization of binge drinking at parties often depicted in media.  We hope that our research project will show the prevalence of college drinking and possible links with college drinking and alcoholism later in life.  College drinking is an important health issue because it is extremely tied in with the “college experience.” However, the health consequences, both short and long term, are often overlooked. Thus, we hope to highlight potential consequences college drinking entails. 
+We want to have our project focus on college age drinking due to the normalization of binge drinking at parties often depicted in media.  We hope that our research project will show the prevalence of college drinking and possible links with college drinking and alcoholism later in life.  College drinking is an important health issue because it is extremely tied in with the “college experience.” However, the health consequences, both short and long term, are often overlooked. Thus, we hope to highlight potential consequences college drinking entails. We may potentially need to broaden the scope of our project to the effects of alcohol in general due to a lack of raw data available for the use of alcohol by college students.
 
 **Datasets**
+- [Substance Abuse & Mental Health Data Archive](https://pdas.samhsa.gov/#/survey/NSDUH-2018-DS0001?column=ALDAYPWK&control=COLLENRLST&results_received=true&row=DEPNDALC&run_chisq=false&weight=ANALWT_C)
+The data came from a survey conducted in 2018 by the Substance Abuse and Mental Health Administration. The survey was distributed to people in the United States aged 12 and older. To view the data we selected, you must click crosstab. The control group of this dataset are students enrolled in college. There is a comparison made between alcohol dependency and number of drinks consumed within a week.
+
+
 
 **Supplementary Resources**
 
@@ -18,10 +22,6 @@ This article discusses a study of college student drinking habits and the potent
 - [Harvard Alcohol Survey](http://archive.sph.harvard.edu/cas/What-We-Learned-08.pdf)
 
 The Harvard School of Public Health fourteen year long College Alcohol Study (CAS) is summarized in this article. CAS, which started in 1992, was the first alcohol study to seek consumption patterns and the harms of these patterns among college students nationally. The study takes into account both gender and age. The study concluded that the most harm was targeted towards students who binge drink (have five or more drinks in a short sitting), but also discovered that binge drinking levels are not equivalent to five or more drinks for everyone. The study also concluded that over 40% of college students have participated in binge drinking during their college career.
-
-- [NIAAA Factsheet](https://www.niaaa.nih.gov/publications/brochures-and-fact-sheets/alcohol-facts-and-statistics)
-
-The National Institute on Alcohol Abuse and Alcoholism, or the NIAAA, compiled together a fact sheet of various studies conducted on alcohol consumption by individuals 12 years or older. There is a section, in particular, that covers alcohol and its prevalence in college. According to a 2018 study conducted by the Substance Abuse and Mental Health Services Administration (SAMHSA) , “54.9 percent of full-time college students ages 18–22 drank alcohol in the past month compared with 44.6 percent of other persons of the same age” (“Alcohol Facts and Statistics”). This displays that a majority of college students consume alcohol more frequently as compared to those in the same age group of 18-22 who are not attending college. Along with this, “Roughly 20 percent of college students meet the criteria for AUD” (“Alcohol Facts and Statistics”) . Meaning, one-fifth of college students can be designated as having Alcohol Use Disorder, which is a medical term that defines the inability for an individual with dependence on alcohol. It is more simply a more scientific classification of the word “alcoholism.”
 
 - [NIAAA Factsheet](https://www.niaaa.nih.gov/publications/brochures-and-fact-sheets/alcohol-facts-and-statistics)
 
