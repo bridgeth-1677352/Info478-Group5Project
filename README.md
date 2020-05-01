@@ -9,7 +9,7 @@ We want to have our project focus on college age drinking due to the normalizati
 
 **Datasets**
 
-- [Drug Use By Age] (https://www.icpsr.umich.edu/web/ICPSR/studies/21600/variables?q=alcohol)
+- [Drug Use By Age](https://www.icpsr.umich.edu/web/ICPSR/studies/21600/variables?q=alcohol)
 
 This dataset comes from the National Longitudinal Study of Adolescent to Adult Health which was conducted by the University of Northern Carolina and published to the ICPSR (a data publication) website where we accessed it. The study lasted from 1994 to 2008 and collected data through in-home interviews and health surveys. The dataset provides a variety of national health data among Americans aged 7-32. Our group will be focusing on data on alcohol use for young Americans. This data includes drinking habits, mixing alcohol with other drugs, and alcohol use by age and gender. 
 
