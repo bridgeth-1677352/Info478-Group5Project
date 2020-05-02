@@ -5,13 +5,13 @@ Bridget Haney, Emma Dickenson, Jennifer Li, Steven Luong
 
 **Project Proposal**
 
-We want to have our project focus on college age drinking due to the normalization of binge drinking at parties often depicted in media.  We hope that our research project will show the prevalence of college drinking and possible links with college drinking and alcoholism later in life.  College drinking is an important health issue because it is extremely tied in with the “college experience.” However, the health consequences, both short and long term, are often overlooked. Thus, we hope to highlight potential consequences college drinking entails. We may potentially need to broaden the scope of our project to the effects of alcohol in general due to a lack of raw data available for the use of alcohol by college students.
+We want our project to focus on college age drinking due to the normalization of binge drinking at college parties that is depicted in the media.  We hope that our research project will show the prevalence of college drinking and possible links between drinking heavily in college and alcoholism later in life.  College drinking is an important health issue because it is strongly tied with college culture, but the extent of alcohol consumption in college oftentimes has devastating affects.These health consequences, both short and long term, are often overlooked. Thus, we hope to highlight potential consequences college drinking entails. We may potentially need to broaden the scope of our project to the effects of alcohol in general due to a lack of raw data available for the use of alcohol by college students.
 
 **Datasets**
 
 - [Drug Use By Age](https://www.icpsr.umich.edu/web/ICPSR/studies/21600/variables?q=alcohol)
 
-This dataset comes from the National Longitudinal Study of Adolescent to Adult Health which was conducted by the University of Northern Carolina and published to the ICPSR (a data publication) website where we accessed it. The study lasted from 1994 to 2008 and collected data through in-home interviews and health surveys. The dataset provides a variety of national health data among Americans aged 7-32. Our group will be focusing on data on alcohol use for young Americans. This data includes drinking habits, mixing alcohol with other drugs, and alcohol use by age and gender. 
+This dataset comes from the National Longitudinal Study of Adolescent to Adult Health which was conducted by the University of Northern Carolina. The dataset was accessed from the ICPSR (a data publication) website. The study lasted from 1994 to 2008 and collected data through in-home interviews and health surveys. The dataset provides a variety of national health data among Americans aged 7-32. Our group will be focusing on data on alcohol use for young adult Americans. This data includes drinking habits, mixing alcohol with other drugs, and alcohol use by age and gender. 
 
 - [Substance Abuse & Mental Health Data Archive](https://pdas.samhsa.gov/#/survey/NSDUH-2018-DS0001?column=ALDAYPWK&control=COLLENRLST&results_received=true&row=DEPNDALC&run_chisq=false&weight=ANALWT_C)
 
@@ -37,7 +37,7 @@ This article discusses the negative and positive consequences of alcohol consump
 
 **Target Audience**
 
-The main target audience for our dataset is undergraduate college students (ages ~17-22) who are concerned with how their alcohol consumption in college affects their health later in life. This study can help college-aged students weigh the risks of drinking and decide if and how much they want to consume alcohol. 
+The main target audience for our dataset is undergraduate college students (ages ~17-22) who are concerned with how their alcohol consumption in college affects their health later in life. This study can help college-aged students weigh the risks of drinking and decide if they want to consume alcohol and if so, how much they want to consume. 
 
 **Result of Research**
 
