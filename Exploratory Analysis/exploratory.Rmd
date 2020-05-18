@@ -8,6 +8,10 @@ knitr::opts_chunk$set(echo = TRUE)
 source("rate_box_plot.R")
 library(dplyr)
 library(ggplot2)
+library(pryr)
+library(tidyr)
+library(knitr)
+library(kableExtra)
 obesity_data <- read.csv("Obesity_GDP_PanelData.csv")
 ```
 
@@ -23,6 +27,86 @@ boxplot(rates$obesity_rate, rates$poverty_rate,
 ```
 
 The boxplots above display the distribution of the obesity rates and poverty rates across all fifty states. It is clear that the distribution of obesity rates is higher than that of poverty rates. The average obesity rate across all states is higher than that of poverty rates. The mean obesity rate is `r signif(obesity_avg, 3)`% which is `r signif(obesity_avg - poverty_avg, 3)`% higher than the poverty mean of `r signif(poverty_avg, 3)`%. In addition, the median obesity rate of `r signif(obesity_median, 3)`% is `r signif(obesity_median - poverty_median, 3)`% higher than the poverty rate median of `r signif(obesity_median, 3)`%. This shows that, on average, a higher percent of people across the United States are obese then are in poverty. Both rates have an inner quartile range of under 5, meaning that 50% of the rates for each states are less than a 5% difference of each other. The inner quartile range for obesity rates is `r signif(obesity_Q3, 3)` and the inner quartile range for poverty rates is `r signif(poverty_Q3, 3)`. The distribution of both rates can also be analized in terms of standard deviation. The standard deviation for obesity rate is `r signif(obesity_sd, 3)` and the standard deviation for poverty rate is `r signif(poverty_sd, 3)`.
+
+### Average Income Distribution Across Four Years
+
+```{r income data 2014, echo=FALSE}
+data_2014 <- obesity_data %>%
+             filter(Year == 2014)
+
+income_2014 <- data_2014 %>%
+               select(Average.Income)
+
+sum_2014 <- summarytools::descr(income_2014)
+```
+
+```{r income data 2015, echo=FALSE}
+data_2015 <- obesity_data %>%
+             filter(Year == 2015)
+
+income_2015 <- data_2015 %>%
+               select(Average.Income)
+sum_2015 <- summarytools::descr(income_2015)
+
+```
+
+```{r income data 2016, echo=FALSE}
+data_2016 <- obesity_data %>%
+             filter(Year == 2016)
+
+income_2016 <- data_2016 %>%
+               select(Average.Income)
+```
+
+```{r income data 2017, echo=FALSE}
+data_2017 <- obesity_data %>%
+             filter(Year == 2017)
+
+income_2017 <- data_2017 %>%
+               select(Average.Income)
+
+```
+
+**Average Income Summary**
+
+To further define the causes of obesity within the United States, a prevalent starting point
+is average income. The selected dataset provides average income for all fifty states across four years: 2014, 2015, 2016, and 2017. Here is a table of summary statistics:
+
+
+```{r income data table, echo=FALSE}
+years <- c(2014, 2015, 2016, 2017)
+mean <- c(mean(income_2014$Average.Income), mean(income_2015$Average.Income),  
+          mean(income_2016$Average.Income), mean(income_2017$Average.Income))
+minimum <- c(min(income_2014$Average.Income), min(income_2015$Average.Income),  
+             min(income_2016$Average.Income), min(income_2017$Average.Income))
+median <- c(median(income_2014$Average.Income), median(income_2015$Average.Income),  
+            median(income_2016$Average.Income), median(income_2017$Average.Income))
+maximum <- c(max(income_2014$Average.Income), max(income_2015$Average.Income),  
+            max(income_2016$Average.Income), max(income_2017$Average.Income))
+
+summary_data <- data.frame(years, mean, minimum, median, maximum)
+
+kable(summary_data, col.names = c("Year", "Mean Income", "Minimum Income", "Median Income", "Maximum Income")) %>%
+kable_styling(latex_options = "striped")  
+```
+
+In visually represent the distribution of average income across four years, the box plots below demonstrate relevant metrics such as means, medians, minimums, maximums, interquartile range data, and any outliers.
+```{r income box plot, echo=FALSE}
+dist_plot <- boxplot(income_2014$Average.Income, 
+                     income_2015$Average.Income,        
+                     income_2016$Average.Income, 
+                     income_2017$Average.Income,
+                     col=rainbow(4),
+                     names= c(2014, 2015, 2016, 2017),
+                     xlab="Year",
+                     ylab="Average Income ($)",
+                     main="Distribution of Average Income Across Years")
+
+```
+
+**Analysis of Distribution of Average Income**
+
+In analyzing the chart, it can be shown that the average income increases each year. From 2014 to 2015, the mean average income increased around 1,069 dollars. From 2015 to 2016, the mean average income increased 929 dollars. Finally, from 2016 to 2017, the mean average income increased 1,133 dollars. There is a relationship then, between year and income, in which income increases each year. Only one outlier during 2014 is visible.
 
 
 # Relationships Between Variables
