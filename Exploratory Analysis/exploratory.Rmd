@@ -1,0 +1,25 @@
+---
+title: "Exploratory Analysis"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("rate_box_plot.R")
+library(dplyr)
+```
+
+# Distribution of Variables 
+### Obesity and Poverty Rates
+```{r, echo=FALSE}
+boxplot(rates$obesity_rate, rates$poverty_rate,
+    main = "Distribution of Rates",
+    names = c("Obesity Rate", "Poverty Rate"),
+    col = rainbow(2),
+    ylab = "Percentages"
+)
+```
+
+##### Figure 1: The boxplots above display the distribution of the obesity rates and poverty rates across all fifty states. It is clear that the distribution of obesity rates is higher than that of poverty rates. The average obesity rate across all states is higher than that of poverty rates. The mean obesity rate is `r signif(obesity_avg, 3)`% which is `r signif(obesity_avg - poverty_avg, 3)`% higher than the poverty mean of `r signif(poverty_avg, 3)`%. In addition, the median obesity rate of `r signif(obesity_median, 3)`% is `r signif(obesity_median - poverty_median, 3)`% higher than the poverty rate median of `r signif(obesity_median, 3)`%. This shows that, on average, a higher percent of people across the United States are obese then are in poverty. Both rates have an inner quartile range of under 5, meaning that 50% of the rates for each states are less than a 5% difference of each other. The inner quartile range for obesity rates is `r signif(obesity_Q3, 3)` and the inner quartile range for poverty rates is `r signif(poverty_Q3, 3)`. The distribution of both rates can also be analized in terms of standard deviation. The standard deviation for obesity rate is `r signif(obesity_sd, 3)` and the standard deviation for poverty rate is `r signif(poverty_sd, 3)`.
+
+
