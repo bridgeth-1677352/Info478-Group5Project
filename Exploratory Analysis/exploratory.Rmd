@@ -106,7 +106,7 @@ dist_plot <- boxplot(income_2014$Average.Income,
 
 **Analysis of Distribution of Average Income**
 
-In analyzing the chart, it can be shown that the average income increases each year. From 2014 to 2015, the mean average income increased around 1,069 dollars. From 2015 to 2016, the mean average income increased 929 dollars. Finally, from 2016 to 2017, the mean average income increased 1,133 dollars. There is a relationship then, between year and income, in which income increases each year. Only one outlier during 2014 is visible.
+In analyzing the chart, it can be shown that the average income increases each year. From 2014 to 2015, the mean average income increased around 1,069 dollars. From 2015 to 2016, the mean average income increased 929 dollars. Finally, from 2016 to 2017, the mean average income increased 1,133 dollars. The minimum and maximum average income values also increase across years. There is a relationship then, between year and income, in which average income increases each year. Only one outlier during 2014 is visible that is almost equivalent to the maximum value of 2015.
 
 
 # Relationships Between Variables
