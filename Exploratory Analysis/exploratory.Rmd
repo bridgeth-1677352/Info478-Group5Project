@@ -9,7 +9,6 @@ source("rate_box_plot.R")
 source("barplot.R")
 library(dplyr)
 library(ggplot2)
-library(pryr)
 library(tidyr)
 library(knitr)
 library(kableExtra)
@@ -38,7 +37,6 @@ data_2014 <- obesity_data %>%
 income_2014 <- data_2014 %>%
                select(Average.Income)
 
-sum_2014 <- summarytools::descr(income_2014)
 ```
 
 ```{r income data 2015, echo=FALSE}
@@ -47,7 +45,6 @@ data_2015 <- obesity_data %>%
 
 income_2015 <- data_2015 %>%
                select(Average.Income)
-sum_2015 <- summarytools::descr(income_2015)
 
 ```
 
