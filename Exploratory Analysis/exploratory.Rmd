@@ -3,7 +3,7 @@ title: "Exploratory Analysis"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r setup, include=FALSE, warning=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 source("rate_box_plot.R")
 source("barplot.R")
@@ -18,7 +18,7 @@ obesity_data <- read.csv("Obesity_GDP_PanelData.csv")
 
 # Distribution of Variables 
 ### Obesity and Poverty Rates
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning=FALSE}
 boxplot(rates$obesity_rate, rates$poverty_rate,
     main = "Distribution of Rates",
     names = c("Obesity Rate", "Poverty Rate"),
@@ -31,7 +31,7 @@ The boxplots above display the distribution of the obesity rates and poverty rat
 
 ### Average Income Distribution Across Four Years
 
-```{r income data 2014, echo=FALSE}
+```{r income data 2014, echo=FALSE, warning=FALSE}
 data_2014 <- obesity_data %>%
              filter(Year == 2014)
 
@@ -51,7 +51,7 @@ sum_2015 <- summarytools::descr(income_2015)
 
 ```
 
-```{r income data 2016, echo=FALSE}
+```{r income data 2016, echo=FALSE, warning=FALSE}
 data_2016 <- obesity_data %>%
              filter(Year == 2016)
 
@@ -59,7 +59,7 @@ income_2016 <- data_2016 %>%
                select(Average.Income)
 ```
 
-```{r income data 2017, echo=FALSE}
+```{r income data 2017, echo=FALSE, warning=FALSE}
 data_2017 <- obesity_data %>%
              filter(Year == 2017)
 
@@ -74,7 +74,7 @@ To further define the causes of obesity within the United States, a prevalent st
 is average income. The selected dataset provides average income for all fifty states across four years: 2014, 2015, 2016, and 2017. Here is a table of summary statistics:
 
 
-```{r income data table, echo=FALSE}
+```{r income data table, echo=FALSE, warning=FALSE}
 years <- c(2014, 2015, 2016, 2017)
 mean <- c(mean(income_2014$Average.Income), mean(income_2015$Average.Income),  
           mean(income_2016$Average.Income), mean(income_2017$Average.Income))
@@ -92,7 +92,7 @@ kable_styling(latex_options = "striped")
 ```
 
 In visually represent the distribution of average income across four years, the box plots below demonstrate relevant metrics such as means, medians, minimums, maximums, interquartile range data, and any outliers.
-```{r income box plot, echo=FALSE}
+```{r income box plot, echo=FALSE, warning=FALSE}
 dist_plot <- boxplot(income_2014$Average.Income, 
                      income_2015$Average.Income,        
                      income_2016$Average.Income, 
