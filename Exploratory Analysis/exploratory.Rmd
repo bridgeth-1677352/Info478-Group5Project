@@ -6,6 +6,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 source("rate_box_plot.R")
+source("barplot.R")
 library(dplyr)
 library(ggplot2)
 library(pryr)
@@ -166,3 +167,13 @@ a large disparity among the poor states.
 
 Another interesting trend we see in all three charts is that the years, which are color 
 coded on the graphs are distrubuted quite evenly. We do not see clusters of obesity and income rates for certain years which suggests that there is not a signicant change in income or obesity levels as time goes on. However, our data is limited from 2014-2017 so further research will be needed to better determine how obesity levels change with time. 
+<br>
+
+### Obesity Rates Across Regions
+``` {r, echo = FALSE}
+bar_plot
+```
+<br>
+Based on this bar chart, we can see that average obesity rates across different regions from year 2014 to 2017 is at around 30%. The southeast Region has the highest average obesity rate whereas the Rocky Mountain Region has the lowest average obesity rate. 
+
+Since the higher obesity rate regions and the lower obesity rate regions are scattered, we can conclude that there is no strong correlation between region and obesity rates. One possible explaination for why southeast region has the highest obesity rate could be because that there is more urban area in the southeast region. 
